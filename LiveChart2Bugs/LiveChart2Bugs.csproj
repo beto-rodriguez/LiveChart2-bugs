@@ -96,7 +96,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="NoTooltipObservablePointEnumerableChart.xaml.cs">
+      <DependentUpon>NoTooltipObservablePointEnumerableChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NoTooltipObservablePointEnumerableVM.cs" />
     <Compile Include="RelayCommand.cs" />
+    <Page Include="NoTooltipObservablePointEnumerableChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="OutOfRangeChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

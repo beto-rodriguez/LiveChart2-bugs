@@ -24,11 +24,12 @@ namespace LiveChart2Bugs
             Pages = new List<Page>
             {
                 new Page { Name = "Multiple Axis Out Of Range", Content = new OutOfRangeChartVM() },
-                new Page { Name = "Series NotVisible Chart", Content = new SeriesNotVisibleChartVM() },
+                new Page { Name = "Series Not Visible on Redraw", Content = new SeriesNotVisibleChartVM() },
+                new Page { Name = "No Tooltip ObservablePoint Enumerable", Content = new NoTooltipObservablePointEnumerableVM() },
                 new Page { Name = "Empty page", Content = new object() },
             };
 
-            SelectedPage = Pages[1];
+            SelectedPage = Pages[2];
         }
     }
 }

@@ -13,6 +13,9 @@
         <DataTemplate DataType="{x:Type local:SeriesNotVisibleChartVM}">
             <local:SeriesNotVisibleChart />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type local:NoTooltipObservablePointEnumerableVM}">
+            <local:NoTooltipObservablePointEnumerableChart />
+        </DataTemplate>
         <DataTemplate DataType="{x:Type local:EmptyPage}">
             <local:EmptyPage />
         </DataTemplate>
@@ -21,7 +24,7 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="4*"></ColumnDefinition>
+                <ColumnDefinition Width="3*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Border Grid.Column="0" Background="LightBlue">
                 <ListBox ItemsSource="{Binding Pages}" SelectedItem="{Binding SelectedPage}">
